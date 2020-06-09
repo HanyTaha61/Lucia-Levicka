@@ -1,0 +1,425 @@
+body {
+  perspective: 5000px;
+  color: #fff;
+  font-family: tahoma; }
+
+/* -- Custom Menu -- */
+.menu {
+  background: url("../images/5.jpg") no-repeat center center;
+  background-size: cover;
+  padding-bottom: 80px; }
+  .menu .menu-item {
+    -webkit-transform-style: preserve-3d;
+    transition: all 0.45s ease-in-out; }
+    .menu .menu-item .back {
+      -webkit-transform: rotatey(180deg); }
+    .menu .menu-item .front, .menu .menu-item .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .menu .menu-item:hover {
+      -webkit-transform: rotateY(180deg); }
+
+/* -- Language Select -- */
+.logo-lang {
+  margin: 10px 0 5px 0; }
+  .logo-lang .form-control {
+    background-color: #dcc080;
+    border-color: #000;
+    border-radius: 10px;
+    color: #7d5317;
+    font-family: fantasy;
+    font-size: 25px;
+    height: 45px;
+    width: 250px;
+    float: right;
+    display: block;
+    position: relative;
+    top: -93px; }
+    @media (max-width: 990px) {
+      .logo-lang .form-control {
+        font-size: 20px; } }
+    .logo-lang .form-control option {
+      font-family: fantasy;
+      font-size: 20px;
+      color: #7d5317; }
+  .logo-lang .langSelect ul {
+    float: right;
+    position: relative;
+    top: -90px;
+    right: -15px;
+    font-family: fantasy;
+    font-size: 25px;
+    text-align: center;
+    display: block; }
+    .logo-lang .langSelect ul li {
+      color: #7d5317;
+      background-color: #fff;
+      text-align: center;
+      padding: 0 5px;
+      margin: auto;
+      margin-top: 1px;
+      border-radius: 5px;
+      display: inline;
+      font-size: 20px; }
+      .logo-lang .langSelect ul li a {
+        text-decoration: none; }
+    @media (max-width: 767px) {
+      .logo-lang .langSelect ul {
+        top: -440px; } }
+
+/* -- Main Section -- */
+.main {
+  margin-top: 10px;
+  background: url("../images/row-bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  height: 100%;
+  width: 100%; }
+  .main .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.65); }
+    @media (max-width: 767px) {
+      .main .overlay .article img {
+        margin-top: 50px; } }
+    .main .overlay .article .article-content a {
+      text-decoration: none; }
+      .main .overlay .article .article-content a h2 {
+        color: #dcc080;
+        transition: color 0.3s ease-in-out;
+        font-weight: bold;
+        width: fit-content; }
+        .main .overlay .article .article-content a h2:hover {
+          color: #7d5317; }
+
+/* ---- contacts [Vedenie hry] ---- */
+.contacts {
+  margin-top: 10px;
+  background: url("../images/background2.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  height: 100%;
+  width: 100%; }
+  .contacts .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.65); }
+    .contacts .overlay .container .contacts-content {
+      /* ---- contacts [Realizacny tim] ---- */ }
+      .contacts .overlay .container .contacts-content .Vedenie p {
+        color: green; }
+        @media (max-width: 767px) {
+          .contacts .overlay .container .contacts-content .Vedenie p {
+            margin-top: 55px; } }
+      .contacts .overlay .container .contacts-content .Vedenie .persons {
+        margin-bottom: 40px; }
+        .contacts .overlay .container .contacts-content .Vedenie .persons button {
+          width: 100%;
+          height: 65px;
+          cursor: pointer;
+          border: 1px solid;
+          background-color: #7D5307;
+          opacity: 0.7;
+          padding: 0;
+          transition: all 0.5s ease-in-out;
+          border-radius: 15px;
+          font-size: 25px; }
+          .contacts .overlay .container .contacts-content .Vedenie .persons button:hover {
+            color: #000; }
+        .contacts .overlay .container .contacts-content .Vedenie .persons .hider1, .contacts .overlay .container .contacts-content .Vedenie .persons .hider2, .contacts .overlay .container .contacts-content .Vedenie .persons .hider3 {
+          padding-top: 10px;
+          transition: all 0.5s ease-in-out;
+          position: relative;
+          font-size: 30px; }
+          .contacts .overlay .container .contacts-content .Vedenie .persons .hider1 .discription, .contacts .overlay .container .contacts-content .Vedenie .persons .hider2 .discription, .contacts .overlay .container .contacts-content .Vedenie .persons .hider3 .discription {
+            transition: all 0.5s ease-in-out;
+            color: red;
+            font-weight: bold; }
+            .contacts .overlay .container .contacts-content .Vedenie .persons .hider1 .discription:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .hider2 .discription:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .hider3 .discription:hover {
+              color: #fff; }
+            @media (max-width: 767px) {
+              .contacts .overlay .container .contacts-content .Vedenie .persons .hider1 .discription, .contacts .overlay .container .contacts-content .Vedenie .persons .hider2 .discription, .contacts .overlay .container .contacts-content .Vedenie .persons .hider3 .discription {
+                transition: all 0.5s ease-in-out;
+                color: red;
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 15px;
+                margin-top: -40px; } }
+          .contacts .overlay .container .contacts-content .Vedenie .persons .hider1 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .hider2 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .hider3 .details {
+            transition: all 0.5s ease-in-out;
+            color: blue;
+            font-size: 25px; }
+            .contacts .overlay .container .contacts-content .Vedenie .persons .hider1 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .hider2 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .hider3 .details:hover {
+              color: #fff; }
+            @media (max-width: 767px) {
+              .contacts .overlay .container .contacts-content .Vedenie .persons .hider1 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .hider2 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .hider3 .details {
+                font-size: 14px; } }
+      .contacts .overlay .container .contacts-content .contacts2 p, .contacts .overlay .container .contacts-content .contacts3 p, .contacts .overlay .container .contacts-content .contacts4 p {
+        color: green; }
+        @media (max-width: 767px) {
+          .contacts .overlay .container .contacts-content .contacts2 p, .contacts .overlay .container .contacts-content .contacts3 p, .contacts .overlay .container .contacts-content .contacts4 p {
+            margin-top: 55px; } }
+      .contacts .overlay .container .contacts-content .contacts2 .persons button, .contacts .overlay .container .contacts-content .contacts3 .persons button, .contacts .overlay .container .contacts-content .contacts4 .persons button {
+        width: 80%;
+        height: 65px;
+        cursor: pointer;
+        font-size: 35px;
+        background-color: #7d5317;
+        opacity: 0.7;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+        border-radius: 20px;
+        margin-bottom: 0; }
+        @media (max-width: 767px) {
+          .contacts .overlay .container .contacts-content .contacts2 .persons button, .contacts .overlay .container .contacts-content .contacts3 .persons button, .contacts .overlay .container .contacts-content .contacts4 .persons button {
+            word-wrap: break-word; } }
+        @media (max-width: 992px) {
+          .contacts .overlay .container .contacts-content .contacts2 .persons button, .contacts .overlay .container .contacts-content .contacts3 .persons button, .contacts .overlay .container .contacts-content .contacts4 .persons button {
+            font-size: 20px; } }
+        .contacts .overlay .container .contacts-content .contacts2 .persons button:hover, .contacts .overlay .container .contacts-content .contacts3 .persons button:hover, .contacts .overlay .container .contacts-content .contacts4 .persons button:hover {
+          color: #000; }
+      .contacts .overlay .container .contacts-content .contacts2 .persons .hider4, .contacts .overlay .container .contacts-content .contacts2 .persons .hider5, .contacts .overlay .container .contacts-content .contacts2 .persons .hider6, .contacts .overlay .container .contacts-content .contacts2 .persons .hider7, .contacts .overlay .container .contacts-content .contacts2 .persons .hider8, .contacts .overlay .container .contacts-content .contacts2 .persons .hider9, .contacts .overlay .container .contacts-content .contacts2 .persons .hider10, .contacts .overlay .container .contacts-content .contacts2 .persons .hider11, .contacts .overlay .container .contacts-content .contacts2 .persons .hider12, .contacts .overlay .container .contacts-content .contacts3 .persons .hider4, .contacts .overlay .container .contacts-content .contacts3 .persons .hider5, .contacts .overlay .container .contacts-content .contacts3 .persons .hider6, .contacts .overlay .container .contacts-content .contacts3 .persons .hider7, .contacts .overlay .container .contacts-content .contacts3 .persons .hider8, .contacts .overlay .container .contacts-content .contacts3 .persons .hider9, .contacts .overlay .container .contacts-content .contacts3 .persons .hider10, .contacts .overlay .container .contacts-content .contacts3 .persons .hider11, .contacts .overlay .container .contacts-content .contacts3 .persons .hider12, .contacts .overlay .container .contacts-content .contacts4 .persons .hider4, .contacts .overlay .container .contacts-content .contacts4 .persons .hider5, .contacts .overlay .container .contacts-content .contacts4 .persons .hider6, .contacts .overlay .container .contacts-content .contacts4 .persons .hider7, .contacts .overlay .container .contacts-content .contacts4 .persons .hider8, .contacts .overlay .container .contacts-content .contacts4 .persons .hider9, .contacts .overlay .container .contacts-content .contacts4 .persons .hider10, .contacts .overlay .container .contacts-content .contacts4 .persons .hider11, .contacts .overlay .container .contacts-content .contacts4 .persons .hider12 {
+        padding-top: 10px;
+        transition: all 0.5s ease-in-out;
+        font-size: 20px; }
+        .contacts .overlay .container .contacts-content .contacts2 .persons .hider4 .discription, .contacts .overlay .container .contacts-content .contacts2 .persons .hider5 .discription, .contacts .overlay .container .contacts-content .contacts2 .persons .hider6 .discription, .contacts .overlay .container .contacts-content .contacts2 .persons .hider7 .discription, .contacts .overlay .container .contacts-content .contacts2 .persons .hider8 .discription, .contacts .overlay .container .contacts-content .contacts2 .persons .hider9 .discription, .contacts .overlay .container .contacts-content .contacts2 .persons .hider10 .discription, .contacts .overlay .container .contacts-content .contacts2 .persons .hider11 .discription, .contacts .overlay .container .contacts-content .contacts2 .persons .hider12 .discription, .contacts .overlay .container .contacts-content .contacts3 .persons .hider4 .discription, .contacts .overlay .container .contacts-content .contacts3 .persons .hider5 .discription, .contacts .overlay .container .contacts-content .contacts3 .persons .hider6 .discription, .contacts .overlay .container .contacts-content .contacts3 .persons .hider7 .discription, .contacts .overlay .container .contacts-content .contacts3 .persons .hider8 .discription, .contacts .overlay .container .contacts-content .contacts3 .persons .hider9 .discription, .contacts .overlay .container .contacts-content .contacts3 .persons .hider10 .discription, .contacts .overlay .container .contacts-content .contacts3 .persons .hider11 .discription, .contacts .overlay .container .contacts-content .contacts3 .persons .hider12 .discription, .contacts .overlay .container .contacts-content .contacts4 .persons .hider4 .discription, .contacts .overlay .container .contacts-content .contacts4 .persons .hider5 .discription, .contacts .overlay .container .contacts-content .contacts4 .persons .hider6 .discription, .contacts .overlay .container .contacts-content .contacts4 .persons .hider7 .discription, .contacts .overlay .container .contacts-content .contacts4 .persons .hider8 .discription, .contacts .overlay .container .contacts-content .contacts4 .persons .hider9 .discription, .contacts .overlay .container .contacts-content .contacts4 .persons .hider10 .discription, .contacts .overlay .container .contacts-content .contacts4 .persons .hider11 .discription, .contacts .overlay .container .contacts-content .contacts4 .persons .hider12 .discription {
+          transition: all 0.5s ease-in-out;
+          color: red;
+          font-weight: bold; }
+          .contacts .overlay .container .contacts-content .contacts2 .persons .hider4 .discription:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider5 .discription:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider6 .discription:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider7 .discription:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider8 .discription:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider9 .discription:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider10 .discription:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider11 .discription:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider12 .discription:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider4 .discription:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider5 .discription:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider6 .discription:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider7 .discription:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider8 .discription:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider9 .discription:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider10 .discription:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider11 .discription:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider12 .discription:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider4 .discription:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider5 .discription:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider6 .discription:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider7 .discription:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider8 .discription:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider9 .discription:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider10 .discription:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider11 .discription:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider12 .discription:hover {
+            color: #fff; }
+        .contacts .overlay .container .contacts-content .contacts2 .persons .hider4 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider5 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider6 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider7 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider8 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider9 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider10 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider11 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider12 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider4 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider5 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider6 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider7 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider8 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider9 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider10 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider11 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider12 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider4 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider5 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider6 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider7 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider8 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider9 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider10 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider11 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider12 .details {
+          width: 80%;
+          transition: all 0.5s ease-in-out;
+          color: blue;
+          font-size: 20px;
+          margin-bottom: 30px; }
+          @media (max-width: 767px) {
+            .contacts .overlay .container .contacts-content .contacts2 .persons .hider4 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider5 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider6 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider7 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider8 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider9 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider10 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider11 .details, .contacts .overlay .container .contacts-content .contacts2 .persons .hider12 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider4 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider5 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider6 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider7 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider8 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider9 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider10 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider11 .details, .contacts .overlay .container .contacts-content .contacts3 .persons .hider12 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider4 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider5 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider6 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider7 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider8 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider9 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider10 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider11 .details, .contacts .overlay .container .contacts-content .contacts4 .persons .hider12 .details {
+              font-size: 14px;
+              margin-bottom: 30px; } }
+          .contacts .overlay .container .contacts-content .contacts2 .persons .hider4 .details:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider5 .details:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider6 .details:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider7 .details:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider8 .details:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider9 .details:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider10 .details:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider11 .details:hover, .contacts .overlay .container .contacts-content .contacts2 .persons .hider12 .details:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider4 .details:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider5 .details:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider6 .details:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider7 .details:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider8 .details:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider9 .details:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider10 .details:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider11 .details:hover, .contacts .overlay .container .contacts-content .contacts3 .persons .hider12 .details:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider4 .details:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider5 .details:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider6 .details:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider7 .details:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider8 .details:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider9 .details:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider10 .details:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider11 .details:hover, .contacts .overlay .container .contacts-content .contacts4 .persons .hider12 .details:hover {
+            color: #fff; }
+      .contacts .overlay .container .contacts-content p {
+        font-weight: bolder;
+        font-size: 35px;
+        margin-bottom: 15px;
+        color: green; }
+        @media (max-width: 767px) {
+          .contacts .overlay .container .contacts-content p {
+            margin-top: 55px; } }
+      .contacts .overlay .container .contacts-content button {
+        width: 40%;
+        height: 75px;
+        cursor: pointer;
+        font-size: 28px;
+        background-color: #7d5317;
+        opacity: 0.7;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+        border-radius: 20px;
+        margin-bottom: 40px; }
+        @media (max-width: 767px) {
+          .contacts .overlay .container .contacts-content button {
+            font-size: 25px;
+            width: 60%; } }
+        .contacts .overlay .container .contacts-content button:hover {
+          color: #000; }
+        .contacts .overlay .container .contacts-content button a {
+          display: block;
+          text-decoration: none;
+          color: #fff;
+          transition: all 0.25s ease-in-out; }
+          .contacts .overlay .container .contacts-content button a:hover {
+            color: #000; }
+
+/* ----  FAQ  ---- */
+.faq {
+  margin-top: 10px;
+  background: url("../images/faq-bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  height: 100%;
+  width: 100%; }
+  .faq .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.65); }
+
+/* ----  Manuals  ---- */
+.manual {
+  margin-top: 10px;
+  background: url("../images/manual-bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  height: 100%;
+  width: 100%; }
+  .manual .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.65); }
+
+/* ----  Footer  ---- */
+.footer {
+  margin-top: 10px;
+  background-color: #000;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  height: 100%;
+  width: 100%; }
+  .footer .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.65); }
+  .footer .links a {
+    display: block;
+    width: 20%;
+    float: left;
+    text-align: center;
+    background-color: #b3130d;
+    color: #dcc080;
+    border: 1px solid;
+    padding: 5px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+    position: relative; }
+    .footer .links a:hover {
+      background-color: #aa513c;
+      color: #dcc080;
+      text-decoration: none; }
+    .footer a{
+      color: #DCC061;float: right;
+      text-decoration: none;padding-left: 5px;
+      transition: color 0.25s ease-in-out;
+    }
+    .footer a:hover{
+      color: #ccc;
+      text-decoration: underline;
+    }      
+    @media (max-width: 767px) {
+      .footer .links a {
+        width: 40%;
+        float: none;
+        margin: auto;
+        margin-bottom: 10px; } }
+
+/* ----  MEDIA  ---- */
+/* Mobile Media */
+@media (max-width: 767px) {
+  .menu .menu-item .front {
+    position: absolute;
+    left: 0;
+    top: 0px; }
+  .menu .menu-item .back {
+    position: relative;
+    left: 0;
+    top: 0; }
+  .menu .logo-lang .img-logo {
+    position: absolute;
+    top: 5px;
+    left: 5px; }
+  .menu .logo-lang .form-group .form-control {
+    width: 200px;
+    font-size: 16px;
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+
+  .contacts {
+    margin-top: 10px;
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    width: 100%; }
+    .contacts .overlay {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.65); }
+      .contacts .overlay .container .contacts-content .Vedenie .persons {
+        height: 250px;
+        margin-top: 20px; }
+        .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown button {
+          width: 100%;
+          height: 60px;
+          cursor: pointer;
+          font-size: 30px;
+          border: 1px solid;
+          background-color: #7d5317;
+          opacity: 0.7;
+          padding: 0;
+          transition: all 0.5s ease-in-out;
+          border-radius: 20px; }
+          .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown button:hover {
+            color: #000; }
+          .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown button span {
+            margin-top: -50px; }
+        .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider1, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider2, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider3, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider4, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider5, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider6,
+        .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider7, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider8, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider9, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider10, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider11, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider12 {
+          padding-top: 10px;
+          transition: all 0.5s ease-in-out;
+          position: relative; }
+          .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider1 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider2 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider3 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider4 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider5 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider6 .details,
+          .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider7 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider8 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider9 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider10 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider11 .details, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider12 .details {
+            transition: all 0.5s ease-in-out;
+            color: blue;
+            font-size: 15px; }
+            .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider1 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider2 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider3 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider4 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider5 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider6 .details:hover,
+            .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider7 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider8 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider9 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider10 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider11 .details:hover, .contacts .overlay .container .contacts-content .Vedenie .persons .dropdown .hider12 .details:hover {
+              color: #fff; } }
+/* Small, Medium, Large Media */
+@media (min-width: 768px) {
+  .contacts .item {
+    border-radius: 20px;
+    padding: 5px; }
+    .contacts .item img {
+      max-width: 50%;
+      height: 70%;
+      padding: 3px;
+      border: 1px solid #ccc;
+      margin-left: 5px;
+      margin-top: 10px;
+      border-radius: 50%;
+      margin: auto; }
+    .contacts .item .name {
+      font-size: 24px;
+      background-color: #ccc;
+      margin: 5px;
+      border-radius: 20px;
+      margin: auto; }
+    .contacts .item p {
+      padding: 10px;
+      font-size: 14px;
+      font-weight: normal;
+      float: none;
+      margin-top: 0;
+      margin-bottom: 30px; } }
+
+/*# sourceMappingURL=style.css.map */
